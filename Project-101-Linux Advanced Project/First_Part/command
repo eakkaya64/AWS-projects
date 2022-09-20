@@ -1,0 +1,1 @@
+cat event_history.csv | grep -i "serdar" | grep -i "terminateinstance" | grep -oE "i-.{17}" |sort|uniq | tee result.txt
